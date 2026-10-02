@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | CareerConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Career<span>Connect</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="jobs">Jobs</a>
+            <a href="login.html">Login</a>
+        </div>
+
+    </nav>
+
+
+    <main class="form-page">
+
+        <div class="form-card">
+
+            <div class="form-header">
+
+                <div class="form-icon">
+                    👤
+                </div>
+
+                <p class="section-label">
+                    JOIN CAREERCONNECT
+                </p>
+
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Create an account and start your career journey.
+                </p>
+
+            </div>
+
+
+            <form action="register" method="post">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+
+                <label>Account Type</label>
+
+                <select name="role">
+
+                    <option value="CANDIDATE">
+                        Candidate
+                    </option>
+
+                    <option value="RECRUITER">
+                        Recruiter
+                    </option>
+
+                </select>
+
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p class="form-footer">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            Career<span>Connect</span>
+        </div>
+
+        <p>
+            Connecting candidates with opportunities.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

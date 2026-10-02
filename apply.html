@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Apply for Job | CareerConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Career<span>Connect</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="jobs">
+                Jobs
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="form-page">
+
+
+        <div class="form-card">
+
+
+            <div class="form-header">
+
+                <div class="form-icon">
+                    📄
+                </div>
+
+                <p class="section-label">
+                    JOB APPLICATION
+                </p>
+
+                <h1>
+                    Apply for a Job
+                </h1>
+
+                <p>
+                    Enter your details to submit your application.
+                </p>
+
+            </div>
+
+
+            <form action="apply" method="post">
+
+
+                <label>
+                    Your User ID
+                </label>
+
+                <input
+                    type="number"
+                    name="userId"
+                    placeholder="Enter your User ID"
+                    required
+                >
+
+
+                <label>
+                    Job ID
+                </label>
+
+                <input
+                    type="number"
+                    id="jobId"
+                    name="jobId"
+                    placeholder="Job ID"
+                    required
+                >
+
+
+                <button type="submit">
+                    Submit Application
+                </button>
+
+
+            </form>
+
+
+            <p class="form-footer">
+
+                <a href="jobs">
+                    ← Back to Jobs
+                </a>
+
+            </p>
+
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            Career<span>Connect</span>
+        </div>
+
+        <p>
+            Connecting candidates with opportunities.
+        </p>
+
+        <p class="copyright">
+            © 2026 CareerConnect. College Project.
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const jobId =
+            params.get("jobId");
+
+        if (jobId) {
+
+            document.getElementById("jobId").value = jobId;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
